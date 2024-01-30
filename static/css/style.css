@@ -1,0 +1,184 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Bubbles&family=Sevillana&display=swap');
+
+
+body {
+    background-image: url('https://wallpapercave.com/wp/wp6950490.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+body.dark-mode {
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto para modo escuro */
+}
+
+
+.sidebar-open #download {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Ajuste conforme necessário */
+    width: 300px; /* Ajuste conforme necessário */
+    height: 100%;
+    background-color: #fff; /* Ajuste conforme necessário */
+    transition: right 0.3s ease; /* Adiciona uma transição suave */
+    z-index: 9999;
+}
+
+@media (max-width: 768px) {
+    .sidebar-open #download {
+        right: 0;
+    }
+}
+
+
+
+#header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: #1a75bc;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 0px solid #fff;
+}
+
+#name {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#wrapper {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0); /* Posição inicial (nenhum deslocamento horizontal) */
+    }
+    50% {
+        transform: translateX(20px); /* Desloca 20 pixels para a direita */
+    }
+    100% {
+        transform: translateX(0); /* Retorna à posição inicial */
+    }
+}
+
+
+.navbar-brand {
+    display: flex;
+    font-family: sevillana;
+    text-decoration: none; /* Remover sublinhado */
+    margin: -1%; /* Remover margens padrão que podem afetar a centralização */
+
+    animation: moveText 3s infinite; 
+}
+
+.sidebar-brand-icon img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.navbar-nav.sidebar {
+    background-color: #1a75bc;
+    color: #fff;
+}
+
+.navbar-nav.sidebar a {
+    color: #fff !important;
+    text-decoration: none; /* Remover sublinhado */
+}
+
+.navbar-nav.sidebar hr {
+    background-color: #fff;
+}
+
+.navbar-nav.sidebar .active {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #1a75bc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.container-fluid {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #fff;
+    border-top: 2px solid #1a75bc;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.scroll-to-top {
+    background-color: #1a75bc;
+    color: #fff;
+}
+
+.alert {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+audio {
+    display: none;
+}
+
+#anime-image {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+ .nav-link {
+  
+    color: #007bff; 
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+
+.nav-link:active {
+    color: #ff0000; 
+}
+
+.nav-tabs .nav-link.active {
+    color: #1a75bc;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+#current-time {
+    font-size: 24px;
+    margin-top: 10px;
+}

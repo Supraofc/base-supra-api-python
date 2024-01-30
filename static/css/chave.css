@@ -1,0 +1,41 @@
+/* Para Chave Apikey */
+
+body {
+    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700106456.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+}
+
+p {
+    color: #ac0e0e;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
